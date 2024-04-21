@@ -8,7 +8,7 @@
     <link href="/2024/04/19/Fluid%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
     <url>/2024/04/19/Fluid%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>记录一下使用Fluid主题的美化过程</p><h2 id="Fluid自定义样式"><a href="#Fluid自定义样式" class="headerlink" title="Fluid自定义样式"></a>Fluid自定义样式</h2><p>不建议直接修改theme文件夹中的文件，所有修改尽量通过引入自定义样式的方式完成，首先在fluid&#x2F;source文件夹下新建userstyle文件夹，该文件夹下新建js、css文件夹用于存放样式文件。</p><h2 id="新增网站运行时间"><a href="#新增网站运行时间" class="headerlink" title="新增网站运行时间"></a>新增网站运行时间</h2><p>_config.fluid.yml文件的footer配置项下新增：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 复制">&lt;br&gt;&lt;span id=&quot;website_runtime&quot;&gt;载入网站运行时间...&lt;/span&gt;&lt;/br&gt;<br></code></pre></td></tr></table></figure>]]></content>
     
     
     

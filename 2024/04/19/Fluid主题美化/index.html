@@ -16,15 +16,15 @@
   <meta name="author" content="yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="blog">
+    <meta name="description" content="记录一下使用Fluid主题的美化过程 Fluid自定义样式不建议直接修改theme文件夹中的文件，所有修改尽量通过引入自定义样式的方式完成，首先在fluid&#x2F;source文件夹下新建userstyle文件夹，该文件夹下新建js、css文件夹用于存放样式文件。 新增网站运行时间_config.fluid.yml文件的footer配置项下新增： 1&lt;br&gt;&lt;span id&#x3D;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fluid主题美化">
 <meta property="og:url" content="http://example.com/2024/04/19/Fluid%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/index.html">
 <meta property="og:site_name" content="yang">
-<meta property="og:description" content="blog">
+<meta property="og:description" content="记录一下使用Fluid主题的美化过程 Fluid自定义样式不建议直接修改theme文件夹中的文件，所有修改尽量通过引入自定义样式的方式完成，首先在fluid&#x2F;source文件夹下新建userstyle文件夹，该文件夹下新建js、css文件夹用于存放样式文件。 新增网站运行时间_config.fluid.yml文件的footer配置项下新增： 1&lt;br&gt;&lt;span id&#x3D;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-19T03:36:05.000Z">
-<meta property="article:modified_time" content="2024-04-19T03:36:05.769Z">
+<meta property="article:modified_time" content="2024-04-19T10:38:58.224Z">
 <meta property="article:author" content="yang">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -64,11 +64,15 @@
 
 
 
+  
+<link rel="stylesheet" href="/userstyle/css/runtime.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -94,7 +98,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>Yang</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -219,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          132 字
         
       </span>
     
@@ -230,7 +234,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -260,6 +264,19 @@
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
       
+  <aside class="sidebar" style="padding-left: 2rem; margin-right: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
 
     </div>
 
@@ -272,7 +289,11 @@
             
               <div class="markdown-body">
                 
-                
+                <p>记录一下使用Fluid主题的美化过程</p>
+<h2 id="Fluid自定义样式"><a href="#Fluid自定义样式" class="headerlink" title="Fluid自定义样式"></a>Fluid自定义样式</h2><p>不建议直接修改theme文件夹中的文件，所有修改尽量通过引入自定义样式的方式完成，首先在fluid&#x2F;source文件夹下新建userstyle文件夹，该文件夹下新建js、css文件夹用于存放样式文件。</p>
+<h2 id="新增网站运行时间"><a href="#新增网站运行时间" class="headerlink" title="新增网站运行时间"></a>新增网站运行时间</h2><p>_config.fluid.yml文件的footer配置项下新增：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 复制">&lt;br&gt;&lt;span id=&quot;website_runtime&quot;&gt;载入网站运行时间...&lt;/span&gt;&lt;/br&gt;<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -357,19 +378,6 @@
 
     <div class="side-col d-none d-lg-block col-lg-2">
       
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
 
     </div>
   </div>
@@ -442,7 +450,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <br><span id="website_runtime">载入网站运行时间...</span></br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
     </div>
   
   
@@ -593,6 +601,10 @@
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="/userstyle/js/runtime.js"></script>
 
 
 
