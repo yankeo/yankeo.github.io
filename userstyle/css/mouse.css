@@ -1,3 +1,4 @@
+/* 全局箭头 */
 body, .banner { 
 	cursor: url(/img/Arrow.cur),auto;/* url地址可以是链接，相对位置，绝对位置 */
 }
@@ -11,5 +12,5 @@ input, textarea {
 }
 /* 图片放大 */
 .fancybox-image {
-	cursor: url(/img/SizeAll.cur),auto;
+	cursor: url(https://yankeo.oss-cn-beijing.aliyuncs.com/logo/SizeAll.cur),auto;
 }
