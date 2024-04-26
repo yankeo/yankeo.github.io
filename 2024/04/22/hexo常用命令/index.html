@@ -40,6 +40,8 @@
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
@@ -236,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          121 字
+          137 字
         
       </span>
     
@@ -314,15 +316,22 @@
                 
                 <p>hexo常用命令记录</p>
 <span id="more"></span>
-<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type"></span>[layout] &lt;title&gt;   <span class="hljs-comment">//layout是scaffolds下的布局</span><br>-p, –path	自定义新文章的路径<br>hexo <span class="hljs-keyword">new</span> <span class="hljs-type">draft</span> <span class="hljs-string">&quot;xxx title&quot;</span> <span class="hljs-comment">//新建草稿</span><br>hexo publish [layout] &lt;filename&gt; <span class="hljs-comment">//发布草稿</span><br></code></pre></td></tr></table></figure>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs 1c">hexo clean  <span class="hljs-comment">// 清理缓存</span><br>hexo g  <span class="hljs-comment">//生成</span><br>hexo d <span class="hljs-comment">// 构建</span><br>hexo g -d <span class="hljs-comment">//组合操作</span><br>hexo s  <span class="hljs-comment">// 启动本地服务</span><br></code></pre></td></tr></table></figure>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new [layout] &lt;title&gt;   &#x2F;&#x2F;layout是scaffolds下的布局
+-p, –path	自定义新文章的路径
+hexo new draft &quot;xxx title&quot; &#x2F;&#x2F;新建草稿
+hexo publish [layout] &lt;filename&gt; &#x2F;&#x2F;发布草稿<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean  &#x2F;&#x2F; 清理缓存
+hexo g  &#x2F;&#x2F;生成
+hexo d &#x2F;&#x2F; 构建
+hexo g -d &#x2F;&#x2F;组合操作
+hexo s  &#x2F;&#x2F; 启动本地服务<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
 
 <h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><p>安全模式：不载入插件和脚本</p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">hexo <span class="hljs-comment">--safe</span><br></code></pre></td></tr></table></figure>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo --safe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
 <p>简洁模式：隐藏终端信息</p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">hexo <span class="hljs-comment">--silent</span><br></code></pre></td></tr></table></figure>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo --silent<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
 <p>调试模式：在终端中显示调试信息并记录到 debug.log</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">hexo</span> --<span class="hljs-literal">debug</span><br></code></pre></td></tr></table></figure>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo --debug<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
 
                 
               </div>
@@ -627,6 +636,8 @@
   });
 </script>
 
+
+  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 

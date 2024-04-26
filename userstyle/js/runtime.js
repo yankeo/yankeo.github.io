@@ -24,6 +24,12 @@ function calculateRuntime() {
     totalSeconds %= 3600;
     var minutes = Math.floor(totalSeconds / 60);
     var seconds = totalSeconds % 60;
+
+    // 添加前导零以确保时、分、秒始终为两位数
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+    
     // 构建显示运行时间的字符串
     var runtimeString = `🚀本站已夹缝生存 ${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒`;
     

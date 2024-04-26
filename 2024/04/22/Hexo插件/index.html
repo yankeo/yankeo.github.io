@@ -41,6 +41,8 @@
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
@@ -237,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          73 字
+          72 字
         
       </span>
     
@@ -317,9 +319,36 @@
 <p>Hexo常用插件</p>
 <span id="more"></span>
 <h2 id="hexo-all-minifier"><a href="#hexo-all-minifier" class="headerlink" title="hexo-all-minifier"></a>hexo-all-minifier</h2><p>用于压缩hexo生成的静态页面<br>安装：</p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install hexo-<span class="hljs-keyword">all</span>-minifier <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install hexo-all-minifier --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
 <p>配置(_config.yml):</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 代码压缩插件hexo-all-minifier</span><br><span class="hljs-attr">all_minifier:</span> <span class="hljs-literal">true</span><br><br><span class="hljs-attr">html_minifier:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">ignore_error:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">exclude:</span><br>  <br><span class="hljs-attr">css_minifier:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">exclude:</span> <br>    <span class="hljs-bullet">-</span> <span class="hljs-string">&#x27;*.min.css&#x27;</span><br><br><span class="hljs-attr">js_minifier:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">mangle:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">output:</span><br>  <span class="hljs-attr">compress:</span><br>  <span class="hljs-attr">exclude:</span> <br>    <span class="hljs-bullet">-</span> <span class="hljs-string">&#x27;*.min.js&#x27;</span><br><br><span class="hljs-attr">image_minifier:</span> <br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 图片不压缩</span><br>  <span class="hljs-attr">interlaced:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">multipass:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">optimizationLevel:</span> <span class="hljs-number">2</span><br>  <span class="hljs-attr">pngquant:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">progressive:</span> <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none"># 代码压缩插件hexo-all-minifier
+all_minifier: true
+
+html_minifier:
+  enable: true
+  ignore_error: false
+  exclude:
+  
+css_minifier:
+  enable: true
+  exclude: 
+    - &#39;*.min.css&#39;
+
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - &#39;*.min.js&#39;
+
+image_minifier: 
+  enable: false # 图片不压缩
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
 
                 
               </div>
@@ -707,6 +736,8 @@
   });
 </script>
 
+
+  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 

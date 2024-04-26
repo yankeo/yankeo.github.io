@@ -2,8 +2,8 @@
 body, .banner { 
 	cursor: url(/img/Arrow.cur),auto;/* url地址可以是链接，相对位置，绝对位置 */
 }
-/* 所有可跳转链接 */
-a, button{
+/* 所有可跳转链接, 及封面向下部分 */
+a, button, .scroll-down-bar {
 	cursor: url(/img/Hand.cur),auto !important;
 }
 /* 搜索框、输入框 */
@@ -12,5 +12,5 @@ input, textarea {
 }
 /* 图片放大 */
 .fancybox-image {
-	cursor: url(https://yankeo.oss-cn-beijing.aliyuncs.com/logo/SizeAll.cur),auto;
+	cursor: url(/img/SizeAll.cur),auto;
 }
