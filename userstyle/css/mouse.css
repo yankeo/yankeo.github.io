@@ -1,1 +1,16 @@
-.banner,body{cursor:url(/img/Arrow.cur),auto}.scroll-down-bar,a,button{cursor:url(/img/Hand.cur),auto!important}input,textarea{cursor:url(/img/IBeam.cur),auto}.fancybox-image{cursor:url(/img/SizeAll.cur),auto}
+/* 全局箭头 */
+body, .banner { 
+	cursor: url(/img/Arrow.cur),auto;/* url地址可以是链接，相对位置，绝对位置 */
+}
+/* 所有可跳转链接, 及封面向下部分 */
+a, button, .scroll-down-bar {
+	cursor: url(/img/Hand.cur),auto !important;
+}
+/* 搜索框、输入框 */
+input, textarea {
+	cursor: url(/img/IBeam.cur),auto;    /* 这里应该是竖条光标 */
+}
+/* 图片放大 */
+.fancybox-image {
+	cursor: url(/img/SizeAll.cur),auto;
+}
